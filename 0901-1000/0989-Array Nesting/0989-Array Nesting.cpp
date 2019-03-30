@@ -19,7 +19,19 @@ public:
                 maxLen = max(maxLen, len);
             }
         }
-        
+        Search (A,t)
+   low = 0
+   high = n-1 
+   while low  ≤ high do 
+       mid = (low + high)/2
+       if t < A[mid] then 
+          high = mid -1 
+       else if t > A[mid] then 
+          low = mid + 1
+       else 
+          return true 
+     return false
+end
         return maxLen;
     }
 };
